@@ -45,6 +45,7 @@ const Contact = () => {
               </div>
             </div>
             <div className='w-4/5 max-w-screen-sm flex flex-col text-left text-formGray mt-10 mb-16 mx-auto'>
+            <input type="hidden" name="form-name" value="contact" />
               <label className='text-lg mr-auto mb-5'>Full Name</label>
               <input value={name} onChange={(e) => setName(e.target.value)} type='name' name='fullName' className=' rounded-3xl ring-1 ring-gray-400 mb-4 py-4 px-4 outline-none focus-within:ring-blue-400' placeholder='Name' />
               {nameErr && <h3 className='text-red-400 pb-1 mb-10'>Please type a valid name</h3>}
